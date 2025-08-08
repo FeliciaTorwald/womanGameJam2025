@@ -3,51 +3,76 @@ using System.Collections.Generic;
 
 public class AudioPuzzleManager : MonoBehaviour
 {
+    [Header("Melody")]
     public List<string> correctSequence = new List<string> { "C", "E", "G", "F" };
     private List<string> playerSequence = new List<string>();
 
+    [Header("Candles")]
+    public List<Candle> candles;
+
+    [Header("Audio Feedback")]
     public AudioClip successSound;
     public AudioClip failSound;
     public AudioSource audioSource;
 
-    public GameObject secretObject; 
+    [Header("Puzzle Outcome")]
+    public GameObject secretDoor; 
 
     public void RegisterNote(string note)
     {
-        playerSequence.Add(note);
+        int currentIndex = playerSequence.Count;
 
         
-        if (playerSequence.Count == correctSequence.Count)
+        if (note == correctSequence[currentIndex])
         {
-            if (IsCorrectSequence())
+            playerSequence.Add(note);
+            Debug.Log("Correct note: " + note);
+
+            
+            if (currentIndex < candles.Count)
+                candles[currentIndex].LightUp();
+
+            
+            if (playerSequence.Count == correctSequence.Count)
             {
-                Debug.Log("Correct melody!");
+                Debug.Log("Melody complete!");
                 audioSource.PlayOneShot(successSound);
                 TriggerSuccess();
             }
-            else
-            {
-                Debug.Log("Wrong melody.");
-                audioSource.PlayOneShot(failSound);
-                playerSequence.Clear();
-            }
         }
-    }
-
-    private bool IsCorrectSequence()
-    {
-        for (int i = 0; i < correctSequence.Count; i++)
+        else
         {
-            if (playerSequence[i] != correctSequence[i])
-                return false;
+            Debug.Log("Wrong note: " + note);
+            audioSource.PlayOneShot(failSound);
+            ResetPuzzle();
         }
-        return true;
     }
 
     private void TriggerSuccess()
     {
+        if (secretDoor != null)
+        {
+            
+            secretDoor.SetActive(false);
+        }
+
         
-        if (secretObject != null)
-            secretObject.SetActive(false); 
+        foreach (var candle in candles)
+        {
+            candle.Extinguish();
+        }
+
+        playerSequence.Clear();
+    }
+
+    private void ResetPuzzle()
+    {
+        playerSequence.Clear();
+
+        
+        foreach (var candle in candles)
+        {
+            candle.Extinguish();
+        }
     }
 }
