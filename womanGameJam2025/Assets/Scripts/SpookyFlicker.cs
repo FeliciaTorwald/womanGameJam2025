@@ -26,7 +26,7 @@ public class SpookyFlicker : MonoBehaviour
             for (int i = 0; i < flickerCount; i++)
             {
                 // Turn image on
-                flickerImage.color = new Color(1, 1, 1, 1); // full opacity
+                flickerImage.color = new Color(1, 1, 1, 0.7f); // full opacity
                 yield return new WaitForSeconds(flickerDuration);
 
                 // Turn image off
