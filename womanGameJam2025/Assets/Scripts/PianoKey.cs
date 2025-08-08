@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PianoKey : MonoBehaviour
 {
-    public string noteName;
+    public string noteName; // e.g., "C", "D#", etc.
     public AudioClip noteSound;
 
     private AudioSource audioSource;
@@ -14,14 +14,14 @@ public class PianoKey : MonoBehaviour
         puzzleManager = FindAnyObjectByType<AudioPuzzleManager>();
     }
 
+    private void OnMouseDown()
+    {
+        PlayNote();
+    }
+
     public void PlayNote()
     {
         audioSource.PlayOneShot(noteSound);
         puzzleManager.RegisterNote(noteName);
-    }
-
-    private void OnMouseDown()
-    {
-        PlayNote(); 
     }
 }
