@@ -21,7 +21,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: MasterMaterial_WallsProBuilder
-  m_Shader: {fileID: -6465566751694194690, guid: d0a46746d65cdba4db637d74ceae6a19, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 75160ba85d6a26a41adbcb89da0b7939, type: 3}
   m_Parent: {fileID: 2100000, guid: 7668f5f4d9273034784dc4c8493027d6, type: 2}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -47,5 +47,6 @@ Material:
     m_Colors:
     - _Color: {r: 0.9372549, g: 0.9764706, b: 1, a: 0}
     - _TextureTiling: {r: 2.5, g: 2.5, b: 0, a: 0}
+    - _UV_Tiling: {r: 2.07, g: 1.88, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
