@@ -11,7 +11,7 @@ public class PianoKey3D : MonoBehaviour
     private Color originalColor;
     private Renderer rend;
 
-    public GameObject floatingTextPrefab;
+    //public GameObject floatingTextPrefab;
     public float textLifetime = 1f;
 
     private AudioSource audioSource;

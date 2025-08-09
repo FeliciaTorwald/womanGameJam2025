@@ -470,7 +470,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 118510376}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1529318529}
+        m_TargetAssemblyTypeName: StartMeny, Assembly-CSharp
+        m_MethodName: StartGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &118510376
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6837,6 +6849,7 @@ GameObject:
   - component: {fileID: 1529318526}
   - component: {fileID: 1529318525}
   - component: {fileID: 1529318528}
+  - component: {fileID: 1529318529}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -6962,6 +6975,18 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+--- !u!114 &1529318529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1529318524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8f0f80f3f198fe479f2e9e1df49f1db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!43 &1664511605
 Mesh:
   m_ObjectHideFlags: 0
@@ -7423,7 +7448,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1904480786}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1529318529}
+        m_TargetAssemblyTypeName: StartMeny, Assembly-CSharp
+        m_MethodName: Credits
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1904480786
 MonoBehaviour:
   m_ObjectHideFlags: 0
