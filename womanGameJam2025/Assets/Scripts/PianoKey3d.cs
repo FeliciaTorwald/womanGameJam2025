@@ -4,7 +4,7 @@ using UnityEngine;
 public class PianoKey3D : MonoBehaviour
 {
     public string noteName = "C";
-    public AudioClip noteClip;              // drag audio clip here
+    public AudioClip noteClip;              
     public float audioStartTime = 0.5f;
 
     public Color pressedColor = Color.yellow;
@@ -16,6 +16,9 @@ public class PianoKey3D : MonoBehaviour
 
     private AudioSource audioSource;
 
+    public Canvas noteCanvas;  
+    public TMPro.TextMeshProUGUI noteText;
+
     void Awake()
     {
         rend = GetComponent<Renderer>();
@@ -26,6 +29,9 @@ public class PianoKey3D : MonoBehaviour
             audioSource = gameObject.AddComponent<AudioSource>();
 
         audioSource.playOnAwake = false;
+
+        if (noteCanvas != null)
+            noteCanvas.enabled = false;
     }
 
     void OnMouseDown()
@@ -44,30 +50,24 @@ public class PianoKey3D : MonoBehaviour
         audioSource.clip = noteClip;
         audioSource.Play();
 
-        // Delay setting the time so the clip can prepare
+        
         StartCoroutine(SetAudioTimeAfterPlay(audioStartTime));
 
         rend.material.color = pressedColor;
         Invoke(nameof(ResetColor), 0.2f);
 
-        if (floatingTextPrefab != null)
+        if (noteCanvas != null && noteText != null)
         {
-            GameObject textObj = Instantiate(
-                floatingTextPrefab,
-                transform.position + Vector3.up * 0.2f,
-                Quaternion.identity
-            );
+            noteText.text = noteName;
+            noteCanvas.enabled = true;
 
-            var tm = textObj.GetComponent<TextMesh>();
-            if (tm != null) tm.text = noteName;
-
-            Destroy(textObj, textLifetime);
+            Invoke(nameof(HideCanvas), 1f);
         }
     }
 
     private IEnumerator SetAudioTimeAfterPlay(float startTime)
     {
-        yield return null; // wait one frame so the audio is prepared
+        yield return null; 
         audioSource.time = startTime;
     }
 
@@ -75,5 +75,11 @@ public class PianoKey3D : MonoBehaviour
     void ResetColor()
     {
         rend.material.color = originalColor;
+    }
+
+    void HideCanvas()
+    {
+        if (noteCanvas != null)
+            noteCanvas.enabled = false;
     }
 }
