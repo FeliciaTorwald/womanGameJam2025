@@ -4,19 +4,22 @@ using UnityEngine.UI;
 
 public class ThreeDigitCycler : MonoBehaviour
 {
-    public Button[] digitButtons;       
-    public TextMeshProUGUI[] digitTexts; 
+    public Button[] digitButtons;
+    public TextMeshProUGUI[] digitTexts;
     public string correctCode = "735";
 
     public ParticleSystem confettiEffect;
+    public AudioSource spookyAudio;
+    public ScreenShake screenShake;
+    public ScreenFlash screenFlash;
 
     void Start()
     {
         for (int i = 0; i < digitButtons.Length; i++)
         {
-            int index = i;  
+            int index = i;
             digitButtons[i].onClick.AddListener(() => CycleDigit(index));
-            digitTexts[i].text = "0";  
+            digitTexts[i].text = "0";
         }
     }
 
@@ -33,15 +36,23 @@ public class ThreeDigitCycler : MonoBehaviour
     {
         string enteredCode = "";
         foreach (var txt in digitTexts)
-        {
             enteredCode += txt.text;
-        }
 
         if (enteredCode == correctCode)
         {
             Debug.Log("Code correct! Puzzle solved.");
+
             if (confettiEffect != null)
                 confettiEffect.Play();
+
+            if (spookyAudio != null)
+                spookyAudio.Play();
+
+            if (screenShake != null)
+                StartCoroutine(screenShake.Shake(0.5f, 0.3f));
+
+            if (screenFlash != null)
+                StartCoroutine(screenFlash.Flash(0.2f));
 
         }
     }
