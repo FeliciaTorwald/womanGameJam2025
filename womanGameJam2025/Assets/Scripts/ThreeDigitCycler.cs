@@ -8,6 +8,8 @@ public class ThreeDigitCycler : MonoBehaviour
     public TextMeshProUGUI[] digitTexts; 
     public string correctCode = "735";
 
+    public ParticleSystem confettiEffect;
+
     void Start()
     {
         for (int i = 0; i < digitButtons.Length; i++)
@@ -38,7 +40,9 @@ public class ThreeDigitCycler : MonoBehaviour
         if (enteredCode == correctCode)
         {
             Debug.Log("Code correct! Puzzle solved.");
-            
+            if (confettiEffect != null)
+                confettiEffect.Play();
+
         }
     }
 }
