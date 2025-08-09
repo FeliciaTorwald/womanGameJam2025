@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: MasterMaterial_KnifeHandle
+  m_Name: Cup
   m_Shader: {fileID: -6465566751694194690, guid: d0a46746d65cdba4db637d74ceae6a19, type: 3}
   m_Parent: {fileID: 2100000, guid: 27d21945b302ea44198c8e36fda425a6, type: 2}
   m_ModifiedSerializedProperties: 0
@@ -40,6 +40,6 @@ Material:
     m_Ints: []
     m_Floats: []
     m_Colors:
-    - _Color: {r: 0.22012573, g: 0.17374703, b: 0.17374703, a: 0}
+    - _Color: {r: 0.408805, g: 0.2998917, b: 0.29953322, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1

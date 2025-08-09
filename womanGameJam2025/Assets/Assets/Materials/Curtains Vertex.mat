@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-3462314018673169315
+--- !u!114 &-1849471523619523296
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
@@ -20,9 +20,9 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: MasterMaterial_Hat1
-  m_Shader: {fileID: -6465566751694194690, guid: d0a46746d65cdba4db637d74ceae6a19, type: 3}
-  m_Parent: {fileID: 2100000, guid: 27d21945b302ea44198c8e36fda425a6, type: 2}
+  m_Name: Curtains Vertex
+  m_Shader: {fileID: -6465566751694194690, guid: 1ad4c0d20eab4ca4ca45a3166ca5e917, type: 3}
+  m_Parent: {fileID: 2100000, guid: f9a02c23541015a46b8e27b7c469962c, type: 2}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -40,6 +40,6 @@ Material:
     m_Ints: []
     m_Floats: []
     m_Colors:
-    - _Color: {r: 1, g: 0.48113197, b: 0.96010524, a: 0}
+    - _Color: {r: 0.83137256, g: 0.9254902, b: 1, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1

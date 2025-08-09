@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: MasterMaterial
-  m_Shader: {fileID: -6465566751694194690, guid: 75160ba85d6a26a41adbcb89da0b7939, type: 3}
+  m_Name: _MasterMaterialVertex
+  m_Shader: {fileID: -6465566751694194690, guid: 1ad4c0d20eab4ca4ca45a3166ca5e917, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -50,17 +50,19 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - Brightness_Rim: 1.07
-    - Rim_Power: 0.72
-    - Toon_Ramp_Offset: 0.493
+    - Brightness_Rim: 1.21
+    - Rim_Power: 0.76
+    - Toon_Ramp_Offset: 0.73
     - Toon_Ramp_Smoothness: 0.028
     - _Ambient: 0
     - _Cell_Shadow_Amount: -0.29
     - _QueueControl: 0
     - _QueueOffset: 0
     - _Shadow_Brightness: 0.26
-    - _Toon_Ramp_Offset_Point: 0.5
+    - _Toon_Ramp_Offset_Point: 0.359
     - _UV_Rotation: 0
+    - _Wave_Speed: 1
+    - _Wave_Strength: 0.08
     m_Colors:
     - Toon_Ramp_Tint: {r: 0.6004509, g: 0.60647285, b: 0.754717, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 0}
