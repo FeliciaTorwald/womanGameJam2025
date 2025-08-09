@@ -3,7 +3,17 @@ guid: 6bdae13283053c648b1c1547ad918172
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pianoKeyBlack_mat
+    second: {fileID: 2100000, guid: 33b4a34d5454d0e48b714a96c6834e18, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pianoKeyWhite_mat
+    second: {fileID: 2100000, guid: cca8b286ad7ca1d4e8206d8422d1b8cc, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
