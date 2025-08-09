@@ -42,7 +42,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Cell_Shadow_Amount: 0.38
+    - _Cell_Shadow_Amount: -0.29
     - _QueueControl: 0
     - _QueueOffset: 0
     - _Shadow_Brightness: 0.26
