@@ -45,7 +45,7 @@ Material:
     m_Floats:
     - _UV_Rotation: 3.16
     m_Colors:
-    - _Color: {r: 0.9372549, g: 0.9764706, b: 1, a: 0}
+    - _Color: {r: 1, g: 0.9568834, b: 0.8509804, a: 0}
     - _TextureTiling: {r: 2.5, g: 2.5, b: 0, a: 0}
     - _UV_Tiling: {r: 2.07, g: 1.88, b: 0, a: 0}
   m_BuildTextureStacks: []
