@@ -21,7 +21,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: MasterMaterial_Walls
-  m_Shader: {fileID: -6465566751694194690, guid: d0a46746d65cdba4db637d74ceae6a19, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 75160ba85d6a26a41adbcb89da0b7939, type: 3}
   m_Parent: {fileID: 2100000, guid: 27d21945b302ea44198c8e36fda425a6, type: 2}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -37,6 +37,10 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - MainTex:
+        m_Texture: {fileID: 2800000, guid: 758ab15274b7f43469e4e40d019e86b0, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _Texture:
         m_Texture: {fileID: 2800000, guid: 758ab15274b7f43469e4e40d019e86b0, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -47,5 +51,6 @@ Material:
     m_Colors:
     - _Color: {r: 0.93396217, g: 0.9760453, b: 1, a: 0}
     - _TextureTiling: {r: 24.5, g: 10.76, b: 0, a: 0}
+    - _UV_Tiling: {r: 13.09, g: 5.9, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1

@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-6519304400662808956
+--- !u!114 &-3462314018673169315
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
@@ -20,9 +20,9 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: MasterMaterial_WallsProBuilder
-  m_Shader: {fileID: -6465566751694194690, guid: 75160ba85d6a26a41adbcb89da0b7939, type: 3}
-  m_Parent: {fileID: 2100000, guid: 7668f5f4d9273034784dc4c8493027d6, type: 2}
+  m_Name: PlantFlower
+  m_Shader: {fileID: -6465566751694194690, guid: a777b358469a10145808ccd488bacf05, type: 3}
+  m_Parent: {fileID: 2100000, guid: 27d21945b302ea44198c8e36fda425a6, type: 2}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -36,17 +36,10 @@ Material:
   m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
-    m_TexEnvs:
-    - _Texture:
-        m_Texture: {fileID: 2800000, guid: 758ab15274b7f43469e4e40d019e86b0, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
+    m_TexEnvs: []
     m_Ints: []
-    m_Floats:
-    - _UV_Rotation: 3.16
+    m_Floats: []
     m_Colors:
-    - _Color: {r: 0.9372549, g: 0.9764706, b: 1, a: 0}
-    - _TextureTiling: {r: 2.5, g: 2.5, b: 0, a: 0}
-    - _UV_Tiling: {r: 2.07, g: 1.88, b: 0, a: 0}
+    - _Color: {r: 0.8867924, g: 0.2928087, b: 0.37527925, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
