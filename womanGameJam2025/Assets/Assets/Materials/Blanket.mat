@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: PlantPot
+  m_Name: Blanket
   m_Shader: {fileID: -6465566751694194690, guid: 75160ba85d6a26a41adbcb89da0b7939, type: 3}
   m_Parent: {fileID: 2100000, guid: 27d21945b302ea44198c8e36fda425a6, type: 2}
   m_ModifiedSerializedProperties: 0
@@ -40,6 +40,6 @@ Material:
     m_Ints: []
     m_Floats: []
     m_Colors:
-    - _Color: {r: 0.6415094, g: 0.59971005, b: 0.29654676, a: 0}
+    - _Color: {r: 0.4360982, g: 0.7924528, b: 0.5682983, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
