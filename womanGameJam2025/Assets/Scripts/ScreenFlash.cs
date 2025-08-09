@@ -8,7 +8,7 @@ public class ScreenFlash : MonoBehaviour
 
     public IEnumerator Flash(float duration)
     {
-        flashImage.color = new Color(1, 1, 1, 1);
+        flashImage.color = new Color(1, 1, 1, 0.5f);
         yield return new WaitForSeconds(duration);
         flashImage.color = new Color(1, 1, 1, 0);
     }
