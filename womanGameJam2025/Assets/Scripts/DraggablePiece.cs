@@ -5,7 +5,6 @@ public class DraggablePiece : MonoBehaviour, IBeginDragHandler, IDragHandler, IE
 {
     private RectTransform rectTransform;
     private Canvas canvas;
-    private Vector3 startPos;
 
     [Header("Snap Settings")]
     public Vector3 correctPosition;
@@ -13,17 +12,34 @@ public class DraggablePiece : MonoBehaviour, IBeginDragHandler, IDragHandler, IE
     public float snapDistance = 20f;
     public float rotationSnap = 10f;
 
+    [Header("Scatter Settings")]
+    public Vector2 scatterMin = new Vector2(-200, -200);
+    public Vector2 scatterMax = new Vector2(200, 200);
+    public bool randomizeAtStart = true;
+
     void Awake()
     {
         rectTransform = GetComponent<RectTransform>();
         canvas = GetComponentInParent<Canvas>();
-        startPos = rectTransform.anchoredPosition;
+
+        if (randomizeAtStart)
+        {
+            ScatterPiece();
+        }
     }
 
-    public void OnBeginDrag(PointerEventData eventData)
+    void ScatterPiece()
     {
-        startPos = rectTransform.anchoredPosition;
+        rectTransform.anchoredPosition = new Vector2(
+            Random.Range(scatterMin.x, scatterMax.x),
+            Random.Range(scatterMin.y, scatterMax.y)
+        );
+
+        int randomRot = Random.Range(0, 4) * 90;
+        rectTransform.rotation = Quaternion.Euler(0, 0, randomRot);
     }
+
+    public void OnBeginDrag(PointerEventData eventData) { }
 
     public void OnDrag(PointerEventData eventData)
     {
