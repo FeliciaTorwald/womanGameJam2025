@@ -249,6 +249,7 @@ MonoBehaviour:
   openAngle: 70
   speed: 2
   isOpen: 0
+  canOpen: 0
 --- !u!4 &8032407261862914966 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 9d1c0c66d61b8ef40ba1dce0eed1c805, type: 3}
@@ -686,9 +687,9 @@ MonoBehaviour:
   noteClip: {fileID: 8300000, guid: dd9a7b476a271684b81ac15187ab0d52, type: 3}
   audioStartTime: 0.5
   pressedColor: {r: 1, g: 0.3529412, b: 0.6107319, a: 0.8509804}
+  noteLabelPrefab: {fileID: 3882010062660110176, guid: de2dcdf43f481234bbb76bfafc0f6c85, type: 3}
+  labelHeightOffset: 0.2
   textLifetime: 1
-  noteCanvas: {fileID: 0}
-  noteText: {fileID: 0}
 --- !u!65 &7755633314814730176
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -731,9 +732,9 @@ MonoBehaviour:
   noteClip: {fileID: 0}
   audioStartTime: 0.5
   pressedColor: {r: 1, g: 0.3529412, b: 0.6107319, a: 0.8509804}
+  noteLabelPrefab: {fileID: 3882010062660110176, guid: de2dcdf43f481234bbb76bfafc0f6c85, type: 3}
+  labelHeightOffset: 0.2
   textLifetime: 1
-  noteCanvas: {fileID: 0}
-  noteText: {fileID: 0}
 --- !u!65 &8220123921624260986
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -776,9 +777,9 @@ MonoBehaviour:
   noteClip: {fileID: 8300000, guid: b9d2d48c3a5605f42b57a824d7dad36c, type: 3}
   audioStartTime: 0.5
   pressedColor: {r: 1, g: 0.3529412, b: 0.6107319, a: 0.8509804}
+  noteLabelPrefab: {fileID: 3882010062660110176, guid: de2dcdf43f481234bbb76bfafc0f6c85, type: 3}
+  labelHeightOffset: 0.2
   textLifetime: 1
-  noteCanvas: {fileID: 0}
-  noteText: {fileID: 0}
 --- !u!65 &5022954302634386342
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -821,9 +822,9 @@ MonoBehaviour:
   noteClip: {fileID: 8300000, guid: 589ad406084dcbe488c3dc1c48f02ea4, type: 3}
   audioStartTime: 0.5
   pressedColor: {r: 1, g: 0.3529412, b: 0.6107319, a: 0.8509804}
+  noteLabelPrefab: {fileID: 3882010062660110176, guid: de2dcdf43f481234bbb76bfafc0f6c85, type: 3}
+  labelHeightOffset: 0.2
   textLifetime: 1
-  noteCanvas: {fileID: 0}
-  noteText: {fileID: 0}
 --- !u!65 &3547797169947880084
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -866,9 +867,9 @@ MonoBehaviour:
   noteClip: {fileID: 8300000, guid: 5b322118b855f5047b64d9415cfea33d, type: 3}
   audioStartTime: 0.5
   pressedColor: {r: 1, g: 0.3529412, b: 0.6107319, a: 0.8509804}
+  noteLabelPrefab: {fileID: 3882010062660110176, guid: de2dcdf43f481234bbb76bfafc0f6c85, type: 3}
+  labelHeightOffset: 0.2
   textLifetime: 1
-  noteCanvas: {fileID: 0}
-  noteText: {fileID: 0}
 --- !u!65 &8628515580629818670
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -911,9 +912,9 @@ MonoBehaviour:
   noteClip: {fileID: 8300000, guid: b9d2d48c3a5605f42b57a824d7dad36c, type: 3}
   audioStartTime: 0.5
   pressedColor: {r: 1, g: 0.3529412, b: 0.6107319, a: 0.8509804}
+  noteLabelPrefab: {fileID: 3882010062660110176, guid: de2dcdf43f481234bbb76bfafc0f6c85, type: 3}
+  labelHeightOffset: 0.2
   textLifetime: 1
-  noteCanvas: {fileID: 0}
-  noteText: {fileID: 0}
 --- !u!65 &4577660041854607393
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -956,9 +957,9 @@ MonoBehaviour:
   noteClip: {fileID: 0}
   audioStartTime: 0.5
   pressedColor: {r: 1, g: 0.3529412, b: 0.6107319, a: 0.8509804}
+  noteLabelPrefab: {fileID: 3882010062660110176, guid: de2dcdf43f481234bbb76bfafc0f6c85, type: 3}
+  labelHeightOffset: 0.2
   textLifetime: 1
-  noteCanvas: {fileID: 0}
-  noteText: {fileID: 0}
 --- !u!65 &1350743318616726480
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1001,9 +1002,9 @@ MonoBehaviour:
   noteClip: {fileID: 8300000, guid: 5b322118b855f5047b64d9415cfea33d, type: 3}
   audioStartTime: 0.5
   pressedColor: {r: 1, g: 0.3529412, b: 0.6107319, a: 0.8509804}
+  noteLabelPrefab: {fileID: 3882010062660110176, guid: de2dcdf43f481234bbb76bfafc0f6c85, type: 3}
+  labelHeightOffset: 0.2
   textLifetime: 1
-  noteCanvas: {fileID: 0}
-  noteText: {fileID: 0}
 --- !u!65 &3901505098290185812
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1046,9 +1047,9 @@ MonoBehaviour:
   noteClip: {fileID: 0}
   audioStartTime: 0.5
   pressedColor: {r: 1, g: 0.3529412, b: 0.6107319, a: 0.8509804}
+  noteLabelPrefab: {fileID: 3882010062660110176, guid: de2dcdf43f481234bbb76bfafc0f6c85, type: 3}
+  labelHeightOffset: 0.2
   textLifetime: 1
-  noteCanvas: {fileID: 0}
-  noteText: {fileID: 0}
 --- !u!65 &129096648224559745
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1091,9 +1092,9 @@ MonoBehaviour:
   noteClip: {fileID: 0}
   audioStartTime: 0.5
   pressedColor: {r: 1, g: 0.3529412, b: 0.6107319, a: 0.8509804}
+  noteLabelPrefab: {fileID: 3882010062660110176, guid: de2dcdf43f481234bbb76bfafc0f6c85, type: 3}
+  labelHeightOffset: 0.2
   textLifetime: 1
-  noteCanvas: {fileID: 0}
-  noteText: {fileID: 0}
 --- !u!65 &2799552745709476863
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1136,9 +1137,9 @@ MonoBehaviour:
   noteClip: {fileID: 0}
   audioStartTime: 0.5
   pressedColor: {r: 1, g: 0.3529412, b: 0.6107319, a: 0.8509804}
+  noteLabelPrefab: {fileID: 3882010062660110176, guid: de2dcdf43f481234bbb76bfafc0f6c85, type: 3}
+  labelHeightOffset: 0.2
   textLifetime: 1
-  noteCanvas: {fileID: 0}
-  noteText: {fileID: 0}
 --- !u!65 &2193847868672685322
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1181,9 +1182,9 @@ MonoBehaviour:
   noteClip: {fileID: 0}
   audioStartTime: 0.5
   pressedColor: {r: 1, g: 0.3529412, b: 0.6107319, a: 0.8509804}
+  noteLabelPrefab: {fileID: 3882010062660110176, guid: de2dcdf43f481234bbb76bfafc0f6c85, type: 3}
+  labelHeightOffset: 0.2
   textLifetime: 1
-  noteCanvas: {fileID: 0}
-  noteText: {fileID: 0}
 --- !u!65 &6643473532633565359
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1226,9 +1227,9 @@ MonoBehaviour:
   noteClip: {fileID: 0}
   audioStartTime: 0.5
   pressedColor: {r: 1, g: 0.3529412, b: 0.6107319, a: 0.8509804}
+  noteLabelPrefab: {fileID: 3882010062660110176, guid: de2dcdf43f481234bbb76bfafc0f6c85, type: 3}
+  labelHeightOffset: 0.2
   textLifetime: 1
-  noteCanvas: {fileID: 0}
-  noteText: {fileID: 0}
 --- !u!65 &3573293746747205773
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1271,9 +1272,9 @@ MonoBehaviour:
   noteClip: {fileID: 0}
   audioStartTime: 0.5
   pressedColor: {r: 1, g: 0.3529412, b: 0.6107319, a: 0.8509804}
+  noteLabelPrefab: {fileID: 3882010062660110176, guid: de2dcdf43f481234bbb76bfafc0f6c85, type: 3}
+  labelHeightOffset: 0.2
   textLifetime: 1
-  noteCanvas: {fileID: 0}
-  noteText: {fileID: 0}
 --- !u!65 &1192382462682919149
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1316,9 +1317,9 @@ MonoBehaviour:
   noteClip: {fileID: 8300000, guid: dd9a7b476a271684b81ac15187ab0d52, type: 3}
   audioStartTime: 0.5
   pressedColor: {r: 1, g: 0.3529412, b: 0.6107319, a: 0.8509804}
+  noteLabelPrefab: {fileID: 3882010062660110176, guid: de2dcdf43f481234bbb76bfafc0f6c85, type: 3}
+  labelHeightOffset: 0.2
   textLifetime: 1
-  noteCanvas: {fileID: 0}
-  noteText: {fileID: 0}
 --- !u!65 &8781124627369973422
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1361,9 +1362,9 @@ MonoBehaviour:
   noteClip: {fileID: 0}
   audioStartTime: 0.5
   pressedColor: {r: 1, g: 0.3529412, b: 0.6107319, a: 0.8509804}
+  noteLabelPrefab: {fileID: 3882010062660110176, guid: de2dcdf43f481234bbb76bfafc0f6c85, type: 3}
+  labelHeightOffset: 0.2
   textLifetime: 1
-  noteCanvas: {fileID: 0}
-  noteText: {fileID: 0}
 --- !u!65 &1209352968626511896
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1406,9 +1407,9 @@ MonoBehaviour:
   noteClip: {fileID: 8300000, guid: 3e9404cd69eaed647b265b75d9694498, type: 3}
   audioStartTime: 0.5
   pressedColor: {r: 1, g: 0.3529412, b: 0.6107319, a: 0.8509804}
+  noteLabelPrefab: {fileID: 3882010062660110176, guid: de2dcdf43f481234bbb76bfafc0f6c85, type: 3}
+  labelHeightOffset: 0.2
   textLifetime: 1
-  noteCanvas: {fileID: 0}
-  noteText: {fileID: 0}
 --- !u!65 &4999437692005418741
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1451,9 +1452,9 @@ MonoBehaviour:
   noteClip: {fileID: 8300000, guid: eb8142282f2b0be4e8c4098c09c1a766, type: 3}
   audioStartTime: 0.5
   pressedColor: {r: 1, g: 0.3529412, b: 0.6107319, a: 0.8509804}
+  noteLabelPrefab: {fileID: 3882010062660110176, guid: de2dcdf43f481234bbb76bfafc0f6c85, type: 3}
+  labelHeightOffset: 0.2
   textLifetime: 1
-  noteCanvas: {fileID: 0}
-  noteText: {fileID: 0}
 --- !u!65 &4366448629745958581
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1496,9 +1497,9 @@ MonoBehaviour:
   noteClip: {fileID: 8300000, guid: eb8142282f2b0be4e8c4098c09c1a766, type: 3}
   audioStartTime: 0.5
   pressedColor: {r: 1, g: 0.3529412, b: 0.6107319, a: 0.8509804}
+  noteLabelPrefab: {fileID: 3882010062660110176, guid: de2dcdf43f481234bbb76bfafc0f6c85, type: 3}
+  labelHeightOffset: 0.2
   textLifetime: 1
-  noteCanvas: {fileID: 0}
-  noteText: {fileID: 0}
 --- !u!65 &2091264647258756502
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1541,9 +1542,9 @@ MonoBehaviour:
   noteClip: {fileID: 8300000, guid: dd9a7b476a271684b81ac15187ab0d52, type: 3}
   audioStartTime: 0.5
   pressedColor: {r: 1, g: 0.3529412, b: 0.6107319, a: 0.8509804}
+  noteLabelPrefab: {fileID: 3882010062660110176, guid: de2dcdf43f481234bbb76bfafc0f6c85, type: 3}
+  labelHeightOffset: 0.2
   textLifetime: 1
-  noteCanvas: {fileID: 0}
-  noteText: {fileID: 0}
 --- !u!65 &5258523815033079722
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1586,9 +1587,9 @@ MonoBehaviour:
   noteClip: {fileID: 0}
   audioStartTime: 0.5
   pressedColor: {r: 1, g: 0.3529412, b: 0.6107319, a: 0.8509804}
+  noteLabelPrefab: {fileID: 3882010062660110176, guid: de2dcdf43f481234bbb76bfafc0f6c85, type: 3}
+  labelHeightOffset: 0.2
   textLifetime: 1
-  noteCanvas: {fileID: 0}
-  noteText: {fileID: 0}
 --- !u!65 &1402330071438602518
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1631,9 +1632,9 @@ MonoBehaviour:
   noteClip: {fileID: 8300000, guid: 5b322118b855f5047b64d9415cfea33d, type: 3}
   audioStartTime: 0.5
   pressedColor: {r: 1, g: 0.3529412, b: 0.6107319, a: 0.8509804}
+  noteLabelPrefab: {fileID: 3882010062660110176, guid: de2dcdf43f481234bbb76bfafc0f6c85, type: 3}
+  labelHeightOffset: 0.2
   textLifetime: 1
-  noteCanvas: {fileID: 0}
-  noteText: {fileID: 0}
 --- !u!65 &1058764227618471821
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1676,9 +1677,9 @@ MonoBehaviour:
   noteClip: {fileID: 0}
   audioStartTime: 0.5
   pressedColor: {r: 1, g: 0.3529412, b: 0.6107319, a: 0.8509804}
+  noteLabelPrefab: {fileID: 3882010062660110176, guid: de2dcdf43f481234bbb76bfafc0f6c85, type: 3}
+  labelHeightOffset: 0.2
   textLifetime: 1
-  noteCanvas: {fileID: 0}
-  noteText: {fileID: 0}
 --- !u!65 &433502569375040263
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1721,9 +1722,9 @@ MonoBehaviour:
   noteClip: {fileID: 0}
   audioStartTime: 0.5
   pressedColor: {r: 1, g: 0.3529412, b: 0.6107319, a: 0.8509804}
+  noteLabelPrefab: {fileID: 3882010062660110176, guid: de2dcdf43f481234bbb76bfafc0f6c85, type: 3}
+  labelHeightOffset: 0.2
   textLifetime: 1
-  noteCanvas: {fileID: 0}
-  noteText: {fileID: 0}
 --- !u!65 &723939764887121495
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1766,9 +1767,9 @@ MonoBehaviour:
   noteClip: {fileID: 0}
   audioStartTime: 0.5
   pressedColor: {r: 1, g: 0.3529412, b: 0.6107319, a: 0.8509804}
+  noteLabelPrefab: {fileID: 3882010062660110176, guid: de2dcdf43f481234bbb76bfafc0f6c85, type: 3}
+  labelHeightOffset: 0.2
   textLifetime: 1
-  noteCanvas: {fileID: 0}
-  noteText: {fileID: 0}
 --- !u!65 &99972728693055409
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1811,9 +1812,9 @@ MonoBehaviour:
   noteClip: {fileID: 8300000, guid: 589ad406084dcbe488c3dc1c48f02ea4, type: 3}
   audioStartTime: 0.5
   pressedColor: {r: 1, g: 0.3529412, b: 0.6107319, a: 0.8509804}
+  noteLabelPrefab: {fileID: 3882010062660110176, guid: de2dcdf43f481234bbb76bfafc0f6c85, type: 3}
+  labelHeightOffset: 0.2
   textLifetime: 1
-  noteCanvas: {fileID: 0}
-  noteText: {fileID: 0}
 --- !u!65 &4705211413257075746
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1856,9 +1857,9 @@ MonoBehaviour:
   noteClip: {fileID: 0}
   audioStartTime: 0.5
   pressedColor: {r: 1, g: 0.3529412, b: 0.6107319, a: 0.8509804}
+  noteLabelPrefab: {fileID: 3882010062660110176, guid: de2dcdf43f481234bbb76bfafc0f6c85, type: 3}
+  labelHeightOffset: 0.2
   textLifetime: 1
-  noteCanvas: {fileID: 0}
-  noteText: {fileID: 0}
 --- !u!65 &4952490045955216640
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1901,9 +1902,9 @@ MonoBehaviour:
   noteClip: {fileID: 8300000, guid: 589ad406084dcbe488c3dc1c48f02ea4, type: 3}
   audioStartTime: 0.5
   pressedColor: {r: 1, g: 0.3529412, b: 0.6107319, a: 0.8509804}
+  noteLabelPrefab: {fileID: 3882010062660110176, guid: de2dcdf43f481234bbb76bfafc0f6c85, type: 3}
+  labelHeightOffset: 0.2
   textLifetime: 1
-  noteCanvas: {fileID: 0}
-  noteText: {fileID: 0}
 --- !u!65 &233625438279280717
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1946,9 +1947,9 @@ MonoBehaviour:
   noteClip: {fileID: 8300000, guid: 5b322118b855f5047b64d9415cfea33d, type: 3}
   audioStartTime: 0.5
   pressedColor: {r: 1, g: 0.3529412, b: 0.6107319, a: 0.8509804}
+  noteLabelPrefab: {fileID: 3882010062660110176, guid: de2dcdf43f481234bbb76bfafc0f6c85, type: 3}
+  labelHeightOffset: 0.2
   textLifetime: 1
-  noteCanvas: {fileID: 0}
-  noteText: {fileID: 0}
 --- !u!65 &7698133442621951175
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1991,9 +1992,9 @@ MonoBehaviour:
   noteClip: {fileID: 0}
   audioStartTime: 0.5
   pressedColor: {r: 1, g: 0.3529412, b: 0.6107319, a: 0.8509804}
+  noteLabelPrefab: {fileID: 3882010062660110176, guid: de2dcdf43f481234bbb76bfafc0f6c85, type: 3}
+  labelHeightOffset: 0.2
   textLifetime: 1
-  noteCanvas: {fileID: 0}
-  noteText: {fileID: 0}
 --- !u!65 &1569642946993394646
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2036,9 +2037,9 @@ MonoBehaviour:
   noteClip: {fileID: 0}
   audioStartTime: 0.5
   pressedColor: {r: 1, g: 0.3529412, b: 0.6107319, a: 0.8509804}
+  noteLabelPrefab: {fileID: 3882010062660110176, guid: de2dcdf43f481234bbb76bfafc0f6c85, type: 3}
+  labelHeightOffset: 0.2
   textLifetime: 1
-  noteCanvas: {fileID: 0}
-  noteText: {fileID: 0}
 --- !u!65 &4574121873247373874
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2081,9 +2082,9 @@ MonoBehaviour:
   noteClip: {fileID: 0}
   audioStartTime: 0.5
   pressedColor: {r: 1, g: 0.3529412, b: 0.6107319, a: 0.8509804}
+  noteLabelPrefab: {fileID: 3882010062660110176, guid: de2dcdf43f481234bbb76bfafc0f6c85, type: 3}
+  labelHeightOffset: 0.2
   textLifetime: 1
-  noteCanvas: {fileID: 0}
-  noteText: {fileID: 0}
 --- !u!65 &3003022905127995315
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2126,9 +2127,9 @@ MonoBehaviour:
   noteClip: {fileID: 0}
   audioStartTime: 0.5
   pressedColor: {r: 1, g: 0.3529412, b: 0.6107319, a: 0.8509804}
+  noteLabelPrefab: {fileID: 3882010062660110176, guid: de2dcdf43f481234bbb76bfafc0f6c85, type: 3}
+  labelHeightOffset: 0.2
   textLifetime: 1
-  noteCanvas: {fileID: 0}
-  noteText: {fileID: 0}
 --- !u!65 &2706415187607386047
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2171,9 +2172,9 @@ MonoBehaviour:
   noteClip: {fileID: 8300000, guid: 82630a46d45dbde409f15f986dec0834, type: 3}
   audioStartTime: 0.5
   pressedColor: {r: 1, g: 0.3529412, b: 0.6107319, a: 0.8509804}
+  noteLabelPrefab: {fileID: 3882010062660110176, guid: de2dcdf43f481234bbb76bfafc0f6c85, type: 3}
+  labelHeightOffset: 0.2
   textLifetime: 1
-  noteCanvas: {fileID: 0}
-  noteText: {fileID: 0}
 --- !u!65 &1177103800484998419
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2216,9 +2217,9 @@ MonoBehaviour:
   noteClip: {fileID: 8300000, guid: eb8142282f2b0be4e8c4098c09c1a766, type: 3}
   audioStartTime: 0.5
   pressedColor: {r: 1, g: 0.3529412, b: 0.6107319, a: 0.8509804}
+  noteLabelPrefab: {fileID: 3882010062660110176, guid: de2dcdf43f481234bbb76bfafc0f6c85, type: 3}
+  labelHeightOffset: 0.2
   textLifetime: 1
-  noteCanvas: {fileID: 0}
-  noteText: {fileID: 0}
 --- !u!65 &6836756824710183571
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2261,9 +2262,9 @@ MonoBehaviour:
   noteClip: {fileID: 0}
   audioStartTime: 0.5
   pressedColor: {r: 1, g: 0.3529412, b: 0.6107319, a: 0.8509804}
+  noteLabelPrefab: {fileID: 3882010062660110176, guid: de2dcdf43f481234bbb76bfafc0f6c85, type: 3}
+  labelHeightOffset: 0.2
   textLifetime: 1
-  noteCanvas: {fileID: 0}
-  noteText: {fileID: 0}
 --- !u!65 &6980443571890397707
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2306,9 +2307,9 @@ MonoBehaviour:
   noteClip: {fileID: 0}
   audioStartTime: 0.5
   pressedColor: {r: 1, g: 0.3529412, b: 0.6107319, a: 0.8509804}
+  noteLabelPrefab: {fileID: 3882010062660110176, guid: de2dcdf43f481234bbb76bfafc0f6c85, type: 3}
+  labelHeightOffset: 0.2
   textLifetime: 1
-  noteCanvas: {fileID: 0}
-  noteText: {fileID: 0}
 --- !u!65 &3232166639219609229
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2351,9 +2352,9 @@ MonoBehaviour:
   noteClip: {fileID: 0}
   audioStartTime: 0.5
   pressedColor: {r: 1, g: 0.3529412, b: 0.6107319, a: 0.8509804}
+  noteLabelPrefab: {fileID: 3882010062660110176, guid: de2dcdf43f481234bbb76bfafc0f6c85, type: 3}
+  labelHeightOffset: 0.2
   textLifetime: 1
-  noteCanvas: {fileID: 0}
-  noteText: {fileID: 0}
 --- !u!65 &5547181566587786085
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2396,9 +2397,9 @@ MonoBehaviour:
   noteClip: {fileID: 8300000, guid: dd9a7b476a271684b81ac15187ab0d52, type: 3}
   audioStartTime: 0.5
   pressedColor: {r: 1, g: 0.3529412, b: 0.6107319, a: 0.8509804}
+  noteLabelPrefab: {fileID: 3882010062660110176, guid: de2dcdf43f481234bbb76bfafc0f6c85, type: 3}
+  labelHeightOffset: 0.2
   textLifetime: 1
-  noteCanvas: {fileID: 0}
-  noteText: {fileID: 0}
 --- !u!65 &1244336495928632820
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2441,9 +2442,9 @@ MonoBehaviour:
   noteClip: {fileID: 0}
   audioStartTime: 0.5
   pressedColor: {r: 1, g: 0.3529412, b: 0.6107319, a: 0.8509804}
+  noteLabelPrefab: {fileID: 3882010062660110176, guid: de2dcdf43f481234bbb76bfafc0f6c85, type: 3}
+  labelHeightOffset: 0.2
   textLifetime: 1
-  noteCanvas: {fileID: 0}
-  noteText: {fileID: 0}
 --- !u!65 &3690942446064612922
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2486,9 +2487,9 @@ MonoBehaviour:
   noteClip: {fileID: 8300000, guid: 82630a46d45dbde409f15f986dec0834, type: 3}
   audioStartTime: 0.5
   pressedColor: {r: 1, g: 0.3529412, b: 0.6107319, a: 0.8509804}
+  noteLabelPrefab: {fileID: 3882010062660110176, guid: de2dcdf43f481234bbb76bfafc0f6c85, type: 3}
+  labelHeightOffset: 0.2
   textLifetime: 1
-  noteCanvas: {fileID: 0}
-  noteText: {fileID: 0}
 --- !u!65 &2716973158827525873
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2531,9 +2532,9 @@ MonoBehaviour:
   noteClip: {fileID: 8300000, guid: dd9a7b476a271684b81ac15187ab0d52, type: 3}
   audioStartTime: 0.5
   pressedColor: {r: 1, g: 0.3529412, b: 0.6107319, a: 0.8509804}
+  noteLabelPrefab: {fileID: 3882010062660110176, guid: de2dcdf43f481234bbb76bfafc0f6c85, type: 3}
+  labelHeightOffset: 0.2
   textLifetime: 1
-  noteCanvas: {fileID: 0}
-  noteText: {fileID: 0}
 --- !u!65 &4467868605585722336
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2576,9 +2577,9 @@ MonoBehaviour:
   noteClip: {fileID: 8300000, guid: b9d2d48c3a5605f42b57a824d7dad36c, type: 3}
   audioStartTime: 0.5
   pressedColor: {r: 1, g: 0.3529412, b: 0.6107319, a: 0.8509804}
+  noteLabelPrefab: {fileID: 3882010062660110176, guid: de2dcdf43f481234bbb76bfafc0f6c85, type: 3}
+  labelHeightOffset: 0.2
   textLifetime: 1
-  noteCanvas: {fileID: 0}
-  noteText: {fileID: 0}
 --- !u!65 &7439468378103635784
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2621,9 +2622,9 @@ MonoBehaviour:
   noteClip: {fileID: 8300000, guid: 82630a46d45dbde409f15f986dec0834, type: 3}
   audioStartTime: 0.5
   pressedColor: {r: 1, g: 0.3529412, b: 0.6107319, a: 0.8509804}
+  noteLabelPrefab: {fileID: 3882010062660110176, guid: de2dcdf43f481234bbb76bfafc0f6c85, type: 3}
+  labelHeightOffset: 0.2
   textLifetime: 1
-  noteCanvas: {fileID: 0}
-  noteText: {fileID: 0}
 --- !u!65 &4736011620145793139
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2666,9 +2667,9 @@ MonoBehaviour:
   noteClip: {fileID: 8300000, guid: 82630a46d45dbde409f15f986dec0834, type: 3}
   audioStartTime: 0.5
   pressedColor: {r: 1, g: 0.3529412, b: 0.6107319, a: 0.8509804}
+  noteLabelPrefab: {fileID: 3882010062660110176, guid: de2dcdf43f481234bbb76bfafc0f6c85, type: 3}
+  labelHeightOffset: 0.2
   textLifetime: 1
-  noteCanvas: {fileID: 0}
-  noteText: {fileID: 0}
 --- !u!65 &7530777518447434054
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2711,9 +2712,9 @@ MonoBehaviour:
   noteClip: {fileID: 8300000, guid: 3e9404cd69eaed647b265b75d9694498, type: 3}
   audioStartTime: 0.5
   pressedColor: {r: 1, g: 0.3529412, b: 0.6107319, a: 0.8509804}
+  noteLabelPrefab: {fileID: 3882010062660110176, guid: de2dcdf43f481234bbb76bfafc0f6c85, type: 3}
+  labelHeightOffset: 0.2
   textLifetime: 1
-  noteCanvas: {fileID: 0}
-  noteText: {fileID: 0}
 --- !u!65 &6469104823900251947
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2756,9 +2757,9 @@ MonoBehaviour:
   noteClip: {fileID: 8300000, guid: eb8142282f2b0be4e8c4098c09c1a766, type: 3}
   audioStartTime: 0.5
   pressedColor: {r: 1, g: 0.3529412, b: 0.6107319, a: 0.8509804}
+  noteLabelPrefab: {fileID: 3882010062660110176, guid: de2dcdf43f481234bbb76bfafc0f6c85, type: 3}
+  labelHeightOffset: 0.2
   textLifetime: 1
-  noteCanvas: {fileID: 0}
-  noteText: {fileID: 0}
 --- !u!65 &2505696688743890354
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2801,9 +2802,9 @@ MonoBehaviour:
   noteClip: {fileID: 8300000, guid: 82630a46d45dbde409f15f986dec0834, type: 3}
   audioStartTime: 0.5
   pressedColor: {r: 1, g: 0.3529412, b: 0.6107319, a: 0.8509804}
+  noteLabelPrefab: {fileID: 3882010062660110176, guid: de2dcdf43f481234bbb76bfafc0f6c85, type: 3}
+  labelHeightOffset: 0.2
   textLifetime: 1
-  noteCanvas: {fileID: 0}
-  noteText: {fileID: 0}
 --- !u!65 &7294097568055240527
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2846,9 +2847,9 @@ MonoBehaviour:
   noteClip: {fileID: 8300000, guid: b9d2d48c3a5605f42b57a824d7dad36c, type: 3}
   audioStartTime: 0.5
   pressedColor: {r: 1, g: 0.3529412, b: 0.6107319, a: 0.8509804}
+  noteLabelPrefab: {fileID: 3882010062660110176, guid: de2dcdf43f481234bbb76bfafc0f6c85, type: 3}
+  labelHeightOffset: 0.2
   textLifetime: 1
-  noteCanvas: {fileID: 0}
-  noteText: {fileID: 0}
 --- !u!65 &7904650467143775905
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2891,9 +2892,9 @@ MonoBehaviour:
   noteClip: {fileID: 8300000, guid: 589ad406084dcbe488c3dc1c48f02ea4, type: 3}
   audioStartTime: 0.5
   pressedColor: {r: 1, g: 0.3529412, b: 0.6107319, a: 0.8509804}
+  noteLabelPrefab: {fileID: 3882010062660110176, guid: de2dcdf43f481234bbb76bfafc0f6c85, type: 3}
+  labelHeightOffset: 0.2
   textLifetime: 1
-  noteCanvas: {fileID: 0}
-  noteText: {fileID: 0}
 --- !u!65 &7837073617962118721
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2936,9 +2937,9 @@ MonoBehaviour:
   noteClip: {fileID: 0}
   audioStartTime: 0.5
   pressedColor: {r: 1, g: 0.3529412, b: 0.6107319, a: 0.8509804}
+  noteLabelPrefab: {fileID: 3882010062660110176, guid: de2dcdf43f481234bbb76bfafc0f6c85, type: 3}
+  labelHeightOffset: 0.2
   textLifetime: 1
-  noteCanvas: {fileID: 0}
-  noteText: {fileID: 0}
 --- !u!65 &7681514113388842551
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2981,9 +2982,9 @@ MonoBehaviour:
   noteClip: {fileID: 8300000, guid: eb8142282f2b0be4e8c4098c09c1a766, type: 3}
   audioStartTime: 0.5
   pressedColor: {r: 1, g: 0.3529412, b: 0.6107319, a: 0.8509804}
+  noteLabelPrefab: {fileID: 3882010062660110176, guid: de2dcdf43f481234bbb76bfafc0f6c85, type: 3}
+  labelHeightOffset: 0.2
   textLifetime: 1
-  noteCanvas: {fileID: 0}
-  noteText: {fileID: 0}
 --- !u!65 &9117433737513155359
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3026,9 +3027,9 @@ MonoBehaviour:
   noteClip: {fileID: 8300000, guid: 5b322118b855f5047b64d9415cfea33d, type: 3}
   audioStartTime: 0.5
   pressedColor: {r: 1, g: 0.3529412, b: 0.6107319, a: 0.8509804}
+  noteLabelPrefab: {fileID: 3882010062660110176, guid: de2dcdf43f481234bbb76bfafc0f6c85, type: 3}
+  labelHeightOffset: 0.2
   textLifetime: 1
-  noteCanvas: {fileID: 0}
-  noteText: {fileID: 0}
 --- !u!65 &3555507186359299691
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3071,9 +3072,9 @@ MonoBehaviour:
   noteClip: {fileID: 8300000, guid: 3e9404cd69eaed647b265b75d9694498, type: 3}
   audioStartTime: 0.5
   pressedColor: {r: 1, g: 0.3529412, b: 0.6107319, a: 0.8509804}
+  noteLabelPrefab: {fileID: 3882010062660110176, guid: de2dcdf43f481234bbb76bfafc0f6c85, type: 3}
+  labelHeightOffset: 0.2
   textLifetime: 1
-  noteCanvas: {fileID: 0}
-  noteText: {fileID: 0}
 --- !u!65 &3889561047746615312
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3116,9 +3117,9 @@ MonoBehaviour:
   noteClip: {fileID: 8300000, guid: b9d2d48c3a5605f42b57a824d7dad36c, type: 3}
   audioStartTime: 0.5
   pressedColor: {r: 1, g: 0.3529412, b: 0.6107319, a: 0.8509804}
+  noteLabelPrefab: {fileID: 3882010062660110176, guid: de2dcdf43f481234bbb76bfafc0f6c85, type: 3}
+  labelHeightOffset: 0.2
   textLifetime: 1
-  noteCanvas: {fileID: 0}
-  noteText: {fileID: 0}
 --- !u!65 &7324429332026502257
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3161,9 +3162,9 @@ MonoBehaviour:
   noteClip: {fileID: 8300000, guid: 3e9404cd69eaed647b265b75d9694498, type: 3}
   audioStartTime: 0.5
   pressedColor: {r: 1, g: 0.3529412, b: 0.6107319, a: 0.8509804}
+  noteLabelPrefab: {fileID: 3882010062660110176, guid: de2dcdf43f481234bbb76bfafc0f6c85, type: 3}
+  labelHeightOffset: 0.2
   textLifetime: 1
-  noteCanvas: {fileID: 0}
-  noteText: {fileID: 0}
 --- !u!65 &4590123549836705881
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3206,9 +3207,9 @@ MonoBehaviour:
   noteClip: {fileID: 8300000, guid: 589ad406084dcbe488c3dc1c48f02ea4, type: 3}
   audioStartTime: 0.5
   pressedColor: {r: 1, g: 0.3529412, b: 0.6107319, a: 0.8509804}
+  noteLabelPrefab: {fileID: 3882010062660110176, guid: de2dcdf43f481234bbb76bfafc0f6c85, type: 3}
+  labelHeightOffset: 0.2
   textLifetime: 1
-  noteCanvas: {fileID: 0}
-  noteText: {fileID: 0}
 --- !u!65 &3172057111111247868
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3256,9 +3257,9 @@ MonoBehaviour:
   noteClip: {fileID: 0}
   audioStartTime: 0.5
   pressedColor: {r: 1, g: 0.3529412, b: 0.6107319, a: 0.8509804}
+  noteLabelPrefab: {fileID: 3882010062660110176, guid: de2dcdf43f481234bbb76bfafc0f6c85, type: 3}
+  labelHeightOffset: 0.2
   textLifetime: 1
-  noteCanvas: {fileID: 0}
-  noteText: {fileID: 0}
 --- !u!65 &2199809525110023755
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3301,9 +3302,9 @@ MonoBehaviour:
   noteClip: {fileID: 8300000, guid: 3e9404cd69eaed647b265b75d9694498, type: 3}
   audioStartTime: 0.5
   pressedColor: {r: 1, g: 0.3529412, b: 0.6107319, a: 0.8509804}
+  noteLabelPrefab: {fileID: 3882010062660110176, guid: de2dcdf43f481234bbb76bfafc0f6c85, type: 3}
+  labelHeightOffset: 0.2
   textLifetime: 1
-  noteCanvas: {fileID: 0}
-  noteText: {fileID: 0}
 --- !u!65 &1245403966079605832
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -21,7 +21,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: KnifeBlade
-  m_Shader: {fileID: -6465566751694194690, guid: d0a46746d65cdba4db637d74ceae6a19, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 75160ba85d6a26a41adbcb89da0b7939, type: 3}
   m_Parent: {fileID: 2100000, guid: 27d21945b302ea44198c8e36fda425a6, type: 2}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -36,10 +36,14 @@ Material:
   m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
-    m_TexEnvs: []
+    m_TexEnvs:
+    - Mask_R_Emission:
+        m_Texture: {fileID: 10307, guid: 0000000000000000f000000000000000, type: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats: []
     m_Colors:
-    - _Color: {r: 0.5283019, g: 0.5283019, b: 0.5283019, a: 0}
+    - _Color: {r: 0.7735849, g: 0.74116784, b: 0.6154621, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1

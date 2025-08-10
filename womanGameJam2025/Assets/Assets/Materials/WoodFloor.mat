@@ -27,7 +27,8 @@ Material:
     m_Ints: []
     m_Floats: []
     m_Colors:
-    - _Color: {r: 0.7798742, g: 0.6005306, b: 0.29674447, a: 0}
+    - Toon_Ramp_Tint: {r: 0.25044495, g: 0.25792098, b: 0.3962264, a: 1}
+    - _Color: {r: 0.6289307, g: 0.44217044, b: 0.22744337, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
 --- !u!114 &1552367508998177031
