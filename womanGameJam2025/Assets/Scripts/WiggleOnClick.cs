@@ -8,6 +8,17 @@ public class WiggleOnClick : MonoBehaviour
     public float wiggleSpeed = 20f;    
 
     private bool isWiggling = false;
+    public AudioClip wiggleSound;
+
+    private AudioSource audioSource;
+
+    void Awake()
+    {
+        // Ensure we have an AudioSource to play the sounds
+        audioSource = GetComponent<AudioSource>();
+        if (audioSource == null)
+            audioSource = gameObject.AddComponent<AudioSource>();
+    }
 
     void OnMouseDown()
     {
@@ -17,6 +28,7 @@ public class WiggleOnClick : MonoBehaviour
 
     IEnumerator Wiggle()
     {
+        audioSource.PlayOneShot(wiggleSound);
         isWiggling = true;
 
         float elapsed = 0f;
