@@ -9,6 +9,7 @@ public class WallpaperPeeler : MonoBehaviour
     public void EnablePeeling()
     {
         canPeel = true;
+        PeelWallpaper();
         Debug.Log("Wallpaper peeling enabled!");
     }
 
