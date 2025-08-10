@@ -753,6 +753,41 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &167408686
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 167408687}
+  m_Layer: 5
+  m_Name: puzzleobject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &167408687
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 167408686}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2101564714}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &419891559 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 397098386851300812, guid: 70e3527c81d07eb45bd343047625b914, type: 3}
@@ -1226,6 +1261,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactionManager: {fileID: 57866506}
+  audioClipDown: {fileID: 0}
+  audioClipUp: {fileID: 0}
 --- !u!43 &850891541
 Mesh:
   m_ObjectHideFlags: 0
@@ -7368,6 +7405,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactionManager: {fileID: 57866506}
+  audioClipDown: {fileID: 0}
+  audioClipUp: {fileID: 0}
 --- !u!54 &1429149606
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7434,6 +7473,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactionManager: {fileID: 57866506}
+  audioClipDown: {fileID: 0}
+  audioClipUp: {fileID: 0}
 --- !u!114 &1471036854 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6553203766785834128, guid: 70e3527c81d07eb45bd343047625b914, type: 3}
@@ -7546,6 +7587,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactionManager: {fileID: 57866506}
+  audioClipDown: {fileID: 0}
+  audioClipUp: {fileID: 0}
 --- !u!54 &1805914139
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7612,6 +7655,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactionManager: {fileID: 57866506}
+  audioClipDown: {fileID: 0}
+  audioClipUp: {fileID: 0}
 --- !u!54 &1829224405
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8251,6 +8296,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2113069122}
+  - {fileID: 167408687}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -8696,6 +8742,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2124591538003159946, guid: 70e3527c81d07eb45bd343047625b914, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1484458861}
+    - targetCorrespondingSourceObject: {fileID: 126833208535599224, guid: 70e3527c81d07eb45bd343047625b914, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6998213693050690114}
+    - targetCorrespondingSourceObject: {fileID: 126833208535599224, guid: 70e3527c81d07eb45bd343047625b914, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6998213693050690113}
     - targetCorrespondingSourceObject: {fileID: 5036934034952706919, guid: 70e3527c81d07eb45bd343047625b914, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1429149607}
@@ -8727,6 +8779,45 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 419891561}
   m_SourcePrefab: {fileID: 100100000, guid: 70e3527c81d07eb45bd343047625b914, type: 3}
+--- !u!1 &6998213693050690112 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 126833208535599224, guid: 70e3527c81d07eb45bd343047625b914, type: 3}
+  m_PrefabInstance: {fileID: 6998213693050690111}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6998213693050690113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6998213693050690112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8407d8c3c33359f46862101f70836b84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  puzzleObject: {fileID: 167408686}
+--- !u!65 &6998213693050690114
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6998213693050690112}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.027952973, y: 0.25889993, z: 0.24082486}
+  m_Center: {x: -0.013817465, y: -0.12924251, z: 0.12041237}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
