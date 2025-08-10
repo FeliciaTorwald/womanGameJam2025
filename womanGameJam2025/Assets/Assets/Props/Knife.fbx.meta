@@ -12,7 +12,22 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Blade1
+    second: {fileID: 2100000, guid: e7f4d256821532640a99cb5a5dabc0ac, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Blood
+    second: {fileID: 2100000, guid: 1b6c2f967078d944da0547a0940be7e8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Handle
+    second: {fileID: 2100000, guid: f43490699e48a8a49b8aedb5c331f1fa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Handle1
     second: {fileID: 2100000, guid: f43490699e48a8a49b8aedb5c331f1fa, type: 2}
   materials:
     materialImportMode: 2
@@ -43,7 +58,7 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 0.01
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -98,7 +113,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 1
+    globalScale: 0.01
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
