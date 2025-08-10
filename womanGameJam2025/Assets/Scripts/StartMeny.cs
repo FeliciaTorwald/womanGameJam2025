@@ -16,4 +16,8 @@ public void Credits()
     {
         SceneManager.LoadScene("Main Menu");
     }
+    public void doExitGame()
+    {
+        Application.Quit();
+    }
 }
