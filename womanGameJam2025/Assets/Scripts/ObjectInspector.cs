@@ -9,12 +9,26 @@ public class ObjectInspector : MonoBehaviour
     public float dimAmountPerObject = 0.1f; // how much darker each time
     public float minLightIntensity = 0.1f;   // prevent full black
 
+    [Header("Sounds")]
+    public AudioClip pickUpSound;
+    public AudioClip putBackSound;
+
+    private AudioSource audioSource;
+
     private GameObject inspectedObject;
     private Vector3 originalPosition;
     private Quaternion originalRotation;
     private bool isInspecting = false;
 
     private HashSet<GameObject> inspectedObjects = new HashSet<GameObject>();
+
+    void Awake()
+    {
+        // Ensure we have an AudioSource
+        audioSource = GetComponent<AudioSource>();
+        if (audioSource == null)
+            audioSource = gameObject.AddComponent<AudioSource>();
+    }
 
     void Update()
     {
@@ -35,12 +49,14 @@ public class ObjectInspector : MonoBehaviour
 
                     isInspecting = true;
 
-                    // If this object hasn't been inspected before, dim the light
+                    // Play pick-up sound
+                    if (pickUpSound != null)
+                        audioSource.PlayOneShot(pickUpSound);
+
+                    // Dim light only once per object
                     if (!inspectedObjects.Contains(inspectedObject))
                     {
                         inspectedObjects.Add(inspectedObject);
-
-                        // Dim light but keep within limits
                         sceneLight.intensity = Mathf.Max(minLightIntensity, sceneLight.intensity - dimAmountPerObject);
                     }
                 }
@@ -62,7 +78,10 @@ public class ObjectInspector : MonoBehaviour
             {
                 inspectedObject.transform.position = originalPosition;
                 inspectedObject.transform.rotation = originalRotation;
-                //inspectedObject.GetComponent<Rigidbody>().isKinematic = false;
+
+                // Play put-back sound
+                if (putBackSound != null)
+                    audioSource.PlayOneShot(putBackSound);
 
                 inspectedObject = null;
                 isInspecting = false;
