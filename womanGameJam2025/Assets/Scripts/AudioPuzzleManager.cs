@@ -4,7 +4,7 @@ using System.Collections.Generic;
 public class AudioPuzzleManager : MonoBehaviour
 {
     [Header("Melody")]
-    public List<string> correctSequence = new List<string> { "C", "E", "G", "F" };
+    public List<string> correctSequence = new List<string> { "fa", "la", "mi", "re" };
     private List<string> playerSequence = new List<string>();
 
     [Header("Candles")]
