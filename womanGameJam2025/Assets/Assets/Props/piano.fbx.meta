@@ -3,7 +3,17 @@ guid: 9d1c0c66d61b8ef40ba1dce0eed1c805
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pianoPedal_mat
+    second: {fileID: 2100000, guid: 8b19a9aeab8ebb7439c28059375a1fed, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: piano_mat
+    second: {fileID: 2100000, guid: ea5c305a96f38a5478dbb1df7c95a75b, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
