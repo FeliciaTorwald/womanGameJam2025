@@ -6,7 +6,9 @@ public class SusTeacup : MonoBehaviour
     public Transform cameraTransform;
     public Vector3 offsetFromCamera = new Vector3(0, -0.2f, 1f);
     public float moveSpeed = 5f;
-    public AudioSource slurpSound;
+
+    [Header("Drink Effects")]
+    public AudioClip slurpClip;
     public ParticleSystem funEffect;
 
     public float throwForce = 5f;
@@ -17,6 +19,7 @@ public class SusTeacup : MonoBehaviour
     private Quaternion originalRotation;
 
     private Rigidbody rb;
+    private AudioSource audioSource;
     private bool isInteracting = false;
 
     void Start()
@@ -31,6 +34,13 @@ public class SusTeacup : MonoBehaviour
             rb.useGravity = false;
             rb.isKinematic = true;
         }
+
+        // Ensure we have an AudioSource for playing sounds
+        audioSource = GetComponent<AudioSource>();
+        if (audioSource == null)
+            audioSource = gameObject.AddComponent<AudioSource>();
+
+        audioSource.playOnAwake = false;
     }
 
     void OnMouseDown()
@@ -63,7 +73,7 @@ public class SusTeacup : MonoBehaviour
         transform.position = targetPos;
         transform.rotation = targetRot;
 
-        // Rotate forward to simulate drinking (e.g. 45 degrees down on X axis)
+        // Rotate forward to simulate drinking
         Quaternion drinkRotation = targetRot * Quaternion.Euler(-45f, 0f, 0f);
 
         float rotateSpeed = 2f;
@@ -76,12 +86,16 @@ public class SusTeacup : MonoBehaviour
         }
         transform.rotation = drinkRotation;
 
-        // Play slurp sound and effect
-        if (slurpSound != null) slurpSound.Play();
-        if (funEffect != null) funEffect.Play();
+        // Play slurp sound
+        if (slurpClip != null)
+            audioSource.PlayOneShot(slurpClip);
 
-        // Wait for the slurp sound duration (or a fixed delay)
-        yield return new WaitForSeconds(slurpSound != null ? slurpSound.clip.length : 1f);
+        // Play particle effect
+        if (funEffect != null)
+            funEffect.Play();
+
+        // Wait for sound length (or default 1 sec)
+        yield return new WaitForSeconds(slurpClip != null ? slurpClip.length : 1f);
 
         // Enable physics for throwing
         rb.isKinematic = false;
@@ -92,11 +106,10 @@ public class SusTeacup : MonoBehaviour
         rb.AddForce(throwDirection, ForceMode.VelocityChange);
         rb.AddTorque(Random.insideUnitSphere * throwTorque);
 
-        // Optional: destroy or disable cup after some time
+        // Optional: destroy after a delay
         yield return new WaitForSeconds(3f);
         Destroy(gameObject);
 
         isInteracting = false;
     }
-
 }
